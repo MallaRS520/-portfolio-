@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MALLA SAUGAT — Portfolio</title>
+  <meta name="description" content="Portfolio of Malla Saugat — Projects: UpDown Game (old + new) + Programming Fundamentals" />
+  <style>
+    :root{
+      --bg:#f6f7fb; --card:#ffffff; --muted:#6b7280; --accent:#1572e8; --brand:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background:var(--bg);
+      color:var(--brand);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    header{
+      background:linear-gradient(90deg,#0f172a,#102a43);
+      color:#fff;
+      padding:36px 18px;
+      text-align:center;
+    }
+    .container{max-width:980px;margin:28px auto;padding:0 16px;}
+    h1{margin:0;font-size:28px;letter-spacing:0.2px}
+    .sub{margin-top:6px;color:rgba(255,255,255,0.85);font-weight:600}
+    .card{background:var(--card);border-radius:10px;padding:18px;margin-bottom:20px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .row{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+    .col{flex:1 1 0;min-width:220px}
+    .muted{color:var(--muted)}
+    a{color:var(--accent);text-decoration:none;font-weight:600}
+    a:hover{text-decoration:underline}
+
+    /* Projects */
+    .project { padding:16px; border-radius:8px; background:#fcfdff; border:1px solid rgba(2,6,23,0.04); }
+    .project h3{margin:0 0 6px 0}
+    .project p{margin:6px 0 10px 0;color:var(--muted)}
+    .buttons{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;border:1px solid rgba(2,6,23,0.06);background:#fff;color:var(--brand);font-weight:700;text-decoration:none}
+    .btn.primary{background:var(--accent);color:#fff;border:0}
+    .preview-wrap{border-radius:8px;overflow:hidden;border:1px solid rgba(2,6,23,0.04);background:#111;min-height:320px}
+    iframe{width:100%;height:420px;border:0;display:block;background:#fff}
+
+    .fallback{padding:10px;background:rgba(0,0,0,0.02);border-radius:6px;margin-top:8px;color:var(--muted);font-size:14px}
+    .meta-line{font-size:14px;color:var(--muted);margin-top:8px}
+
+    footer{margin:36px 0;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:720px){
+      iframe{height:300px}
+      header{padding:28px 12px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>MALLA SAUGAT</h1>
+      <div class="sub">Student of Dong-A University • Student ID: 2518534</div>
+      <div style="margin-top:8px;font-size:14px;color:rgba(255,255,255,0.9)">
+        Email: <a href="mailto:nirajanmalla409@gmail.com" style="color:#bfe1ff;text-decoration:underline">nirajanmalla409@gmail.com</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- About -->
+    <section class="card">
+      <h2 style="margin-top:0">About Me</h2>
+      <p class="muted">Hello — I'm <strong>Malla Saugat</strong>. I enjoy learning web development and building small interactive projects. This portfolio contains my UpDown game projects and Programming Fundamentals exercises.</p>
+      <div class="meta-line">Skills: Basic computer skills • Korean & English communication • Problem-solving</div>
+    </section>
+
+    <!-- Projects header -->
+    <section class="card">
+      <h2 style="margin-top:0">Projects</h2>
+      <p class="muted">Below are my projects. Each card contains a short description, a live preview (if applicable), and links to open the project in a new tab.</p>
+    </section>
+
+    <!-- Project 1: Old version -->
+    <section class="project card" id="project-old">
+      <div class="row" style="align-items:center;justify-content:space-between">
+        <div>
+          <h3>Project 1 — UpDown Game (Old version)</h3>
+          <p class="muted">The original version of my number guessing game. Simple UI and core gameplay. (Old release)</p>
+        </div>
+        <div style="min-width:180px;text-align:right">
+          <div class="buttons">
+            <a class="btn primary" href="https://mallars520.github.io/updowngame/" target="_blank" rel="noopener noreferrer">Open in new tab</a>
+            <a class="btn" href="https://mallars520.github.io/updowngame/" target="_blank" rel="noopener noreferrer">View source / live</a>
+          </div>
+        </div>
+      </div>
+      <div class="preview-wrap" style="margin-top:12px">
+        <iframe src="https://mallars520.github.io/updowngame/" title="UpDown Game - Old version" sandbox="allow-same-origin allow-scripts allow-forms allow-popups"></iframe>
+      </div>
+      <div class="fallback">
+        If the preview above is blank, click <a href="https://mallars520.github.io/updowngame/" target="_blank" rel="noopener noreferrer">Open in new tab</a>.
+      </div>
+    </section>
+
+    <!-- Project 2: New version -->
+    <section class="project card" id="project-new">
+      <div class="row" style="align-items:center;justify-content:space-between">
+        <div>
+          <h3>Project 2 — UpDown Game (New / Improved)</h3>
+          <p class="muted">Improved version with better UI and features. Use the previews or open in a new tab.</p>
+        </div>
+        <div style="min-width:180px;text-align:right">
+          <div class="buttons">
+            <a class="btn primary" href="https://mallars520.github.io/Improved-version-/" target="_blank" rel="noopener noreferrer">Open in new tab</a>
+            <a class="btn" href="https://mallars520.github.io/Improved-version-/" target="_blank" rel="noopener noreferrer">View source / live</a>
+          </div>
+        </div>
+      </div>
+      <div class="preview-wrap" style="margin-top:12px">
+        <iframe src="https://mallars520.github.io/Improved-version-/" title="UpDown Game - New version" sandbox="allow-same-origin allow-scripts allow-forms allow-popups"></iframe>
+      </div>
+      <div class="fallback">
+        If the preview above is blocked or blank, click <a href="https://mallars520.github.io/Improved-version-/" target="_blank" rel="noopener noreferrer">Open in new tab</a>.
+      </div>
+    </section>
+
+    <!-- Project 3: Programming Fundamentals -->
+    <section class="project card" id="project-fundamentals">
+      <div class="row" style="align-items:center;justify-content:space-between">
+        <div>
+          <h3>Project 3 — Programming Fundamentals</h3>
+          <p class="muted">A collection of exercises and self-learning projects from Programming Fundamentals course. Includes AI chat history and Google Colab exercises.</p>
+        </div>
+        <div style="min-width:180px;text-align:right">
+          <div class="buttons">
+            <a class="btn primary" href="https://colab.research.google.com/drive/1lkvCN_Kh24XWitm8o1olkctJIh6dTCnm#scrollTo=CrBpKaZ4GZcw" target="_blank" rel="noopener noreferrer">Open in Colab</a>
+            <a class="btn" href="https://chatgpt.com/share/6900c967-0e00-8007-8950-c1be978a5f55" target="_blank" rel="noopener noreferrer">AI Chat History</a>
+          </div>
+        </div>
+      </div>
+      <div class="fallback">
+        Access the Programming Fundamentals project via 
+        <a href="https://colab.research.google.com/drive/1lkvCN_Kh24XWitm8o1olkctJIh6dTCnm#scrollTo=CrBpKaZ4GZcw" target="_blank" rel="noopener noreferrer">Google Colab</a> 
+        or view the 
+        <a href="https://chatgpt.com/share/6900c967-0e00-8007-8950-c1be978a5f55" target="_blank" rel="noopener noreferrer">AI chat history</a>.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 style="margin-top:0">Notes</h2>
+      <ul style="color:var(--muted)">
+        <li>If the live preview iframe is empty, it usually means the page blocks embedding. Use the "Open in new tab" links.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Malla Saugat • Portfolio
+  </footer>
+</body>
+</html>
